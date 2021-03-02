@@ -1,6 +1,10 @@
 # itask
 
 TarefaRestController.java
+
+
+
+
 		"localhost:8080/tarefas" |content-type : json  |
 		put "/{id}" editar
 		post "/" criar
@@ -9,6 +13,8 @@ TarefaRestController.java
 		get "/xls" → retorna arquivo excel
        
 ConsultaRestController.java
+
+
     "localhost:8080/tarefas/consulta" |content-type : json  |
     esta classe retorna consultas pagináveis do tipo List<Tarefa> pesquisadas por data de início, reponsável e status.
     Em todos os casos deve inserir os parâmetros:
