@@ -1,12 +1,12 @@
 # itask
 
 TarefaRestController.java
-    "localhost:8080/tarefas" |content-type : json  |
-       put "/{id}" editar
-       post "/" criar
-       delete "/{id}" excluir
-       get "" → retorna todas as tarefas ordenadas por data de criação
-       get "/xls" → retorna arquivo excel
+		"localhost:8080/tarefas" |content-type : json  |
+		put "/{id}" editar
+		post "/" criar
+		delete "/{id}" excluir
+		get "" → retorna todas as tarefas ordenadas por data de criação
+		get "/xls" → retorna arquivo excel
        
 ConsultaRestController.java
     "localhost:8080/tarefas/consulta" |content-type : json  |
