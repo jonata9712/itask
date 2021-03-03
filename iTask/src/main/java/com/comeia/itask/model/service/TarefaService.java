@@ -34,12 +34,11 @@ public class TarefaService {
 
 	@Transactional(readOnly = false)
 	public void salvarTarefa(Tarefa tarefa) {
-		System.out.println("salvando");
 		repository.save(tarefa);
 	}
 
 	public List<Tarefa> buscarTodas() {
-		return repository.findByOrderByCreatedTimeAsc();
+		return repository.findByOrderByCreatedTimeDesc();
 	}
 
 	@Transactional(readOnly = false)

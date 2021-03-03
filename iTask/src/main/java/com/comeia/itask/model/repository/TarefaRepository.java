@@ -20,6 +20,6 @@ public interface TarefaRepository extends JpaRepository<Tarefa, UUID>{
 
 	public Page<Tarefa> findByStatus(Pageable pg, int status);
 
-	public List<Tarefa> findByOrderByCreatedTimeAsc();
+	public List<Tarefa> findByOrderByCreatedTimeDesc();
 
 }
